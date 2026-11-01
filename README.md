@@ -1,46 +1,86 @@
-PulseBottle-ad
-A 20-second animated product advertisement for PulseBottle, a fictional smart water bottle used as a placeholder product. The ad has a hook, three product highlights and a call to action, built with kinetic typography, icon motion and a synthesized soundtrack.
-Watch: `PulseBottle_Ad.mp4` (click the file, then play it in the GitHub viewer)
-Video specs
-Property	Value
-Duration	20 seconds
-Resolution	1920×1080 (16:9)
-Frame rate	30 fps
-Video codec	H.264
-Audio	AAC stereo, synthesized music and sound effects
-Voiceover	None (the script appears as on-screen text)
-Scene breakdown
-Time	Scene	What happens
-0:00–0:03	Hook	"Forgot to drink water? Again?" with a buzzing reminder card and an empty glass
-0:03–0:06	Product reveal	Liquid wipe transition, bottle drops in with a bounce, wordmark appears
-0:06–0:10	Highlight 1: smart glow	Cap LED glows with ripples and a bell icon, "Glows to remind you"
-0:10–0:14	Highlight 2: app tracking	Droplets fly to a phone, ring chart fills to 1,600 ml, "Tracks every sip"
-0:14–0:17	Highlight 3: 24-hour cold	Ice cubes drop in, counter runs to 24h, frost spreads at the edges
-0:17–0:20	Call to action	"Hydration, handled." with a pulsing "Order now" button and URL
-Design
-Palette: deep blue `#0E1A2B`, aqua `#2ED3F0`, coral `#FF6B4A`, white `#FFFFFF`
-Fonts: Poppins ExtraBold / Bold (headlines), Inter Medium (labels)
-Motion: word-by-word type with overshoot, squash-and-stretch bottle landing, liquid wipe transition, animated ring chart and counters, ripple and frost effects
-Sound: pad chords, kick, bass and arpeggio, plus whooshes, chimes, counter ticks and a button click
-Suggested voiceover
-The video has no recorded voice. These lines match the scene timing:
-Time	Line
-0:00	Forgot to drink water? Again?
-0:03	Meet PulseBottle.
-0:06	It glows when it's time to sip.
-0:10	Syncs with your phone to track every sip.
-0:14	Keeps drinks cold for 24 hours.
-0:17	PulseBottle. Hydration, handled. Order now.
-To mix in a recording without re-encoding the picture (requires ffmpeg):
-```bash
-ffmpeg -i PulseBottle_Ad.mp4 -i voiceover.wav \
-  -filter_complex "[0:a]volume=0.5[m];[m][1:a]amix=inputs=2:duration=first[a]" \
-  -map 0:v -map "[a]" -c:v copy -c:a aac -b:a 192k PulseBottle_Ad_VO.mp4
+
+# 💧 PulseBottle – Hydration, Handled.
+
+### Smart Hydration. Smarter Living.
+
+PulseBottle is a smart hydration bottle concept designed to help users maintain healthy hydration habits. It combines intelligent reminders, sip tracking, and a modern bottle design to make drinking water easier and more consistent.
+
+---
+
+## 🎬 Project Advertisement
+
+**PulseBottle Promotional Video**
+
+[▶ Watch PulseBottle Advertisement](PulseBottle_Ad.mp4)
+
+---
+
+## ✨ Key Features
+
+- **Smart Hydration Reminders:** Sends notifications to remind users to drink water.
+- **Glowing Reminder System:** The bottle glows to remind users when it's time to hydrate.
+- **Sip Tracking:** Tracks every sip and monitors daily water consumption.
+- **Daily Hydration Goals:** Helps users achieve their recommended daily water intake.
+- **Temperature Retention:** Designed to maintain beverage temperature for up to 16 hours.
+- **Modern Design:** Combines smart technology with a stylish and user-friendly bottle.
+
+---
+
+## 🎯 Project Objective
+
+The objective of PulseBottle is to encourage healthier hydration habits through smart technology. By combining reminders, water consumption tracking, and temperature retention, PulseBottle aims to make everyday hydration more convenient.
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Blender / 3D Design Tools
+- Video Editing Software
+- Motion Graphics
+- Animation and Visual Effects
+
+---
+
+## 🎨 Advertisement Highlights
+
+The promotional animation showcases:
+
+1. The problem of forgetting to drink water.
+2. Introduction of the PulseBottle smart bottle.
+3. Glowing hydration reminders.
+4. Automatic sip tracking and daily water statistics.
+5. Temperature retention feature.
+6. Final product branding and advertisement.
+
+---
+
+## 📁 Project Structure
+
+```text
+PulseBottle/
+│
+├── README.md
+├── PulseBottle_Ad.mp4
+└── Assets/
+    └── Images/
 ```
-Placeholders
-Product: PulseBottle is fictional. Replace the name and features with your own.
-URL: `yourbrand.com` is not a real website.
-How it was made
-Frames were drawn programmatically in Python (Pillow and NumPy), encoded scene by scene with ffmpeg, joined without re-encoding, and mixed with a synthesized audio track.
-License
-Add a `LICENSE` file to set the terms for this repository. Poppins and Inter are licensed under the SIL Open Font License, and the audio is synthesized with no third-party samples.
+
+---
+
+## 🚀 Future Improvements
+
+- Mobile application integration.
+- Bluetooth connectivity.
+- Personalized hydration recommendations.
+- Real-time hydration analytics.
+- AI-powered hydration suggestions.
+
+---
+
+## 👥 Project
+
+**Project Name:** PulseBottle  
+**Category:** Smart Product Design & 3D Animation  
+**Project Type:** Product Advertisement  
+
+### 💧 PulseBottle – Hydration, Handled.
